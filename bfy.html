@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebration Page</title>
+    <style>
+        body {
+            background-color: pink;
+            font-family: 'Comic Sans MS', cursive; 
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff3366; 
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .celebration-message {
+            font-size: 24px;
+            color: #ff3366;
+        }
+
+        .heart {
+            font-size: 48px; 
+            color: #ff3366; 
+        }
+
+        .confetti {
+            width: 20px;
+            height: 20px;
+            background-color: #ff3366;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        /* Add more CSS animations for confetti if needed */
+        .confetti1 {
+            animation: confettiFall 1s linear infinite;
+        }
+
+        .confetti2 {
+            animation: confettiFall 1s linear infinite;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes confettiFall {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(400px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>YAYYYYY JOLLLYYYYYYYY<span class="heart">❤</span></h1>
+
+    <div class="container">
+        <p class="celebration-message">Thank You en chellam, I LOVE YOU</p>
+        <p class="celebration-message">Nee enaku dhan mwah </p>
+
+        <div class="confetti confetti1"></div>
+        <div class="confetti confetti2"></div>
+        <!-- Add more confetti elements as needed -->
+    </div>
+</body>
+</html>
